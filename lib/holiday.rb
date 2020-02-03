@@ -84,10 +84,10 @@ def all_holidays_with_bbq(holiday_hash)
   holiday_hash.each do |season, data|
     data.each do |holiday, supplies|
       supplies.include? ("BBQ")
-      holiday_array << holiday.key 
+      holiday_array << holiday
     end
   end
-  holiday_array
+  holiday_array.flatten
 end
 
 
